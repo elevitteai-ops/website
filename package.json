@@ -1,0 +1,28 @@
+{
+  "name": "elevitte-ai",
+  "version": "1.0.0",
+  "description": "Elevitte AI – AI for Everyone | Applied AI Learning Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "pm2": "pm2 start server.js --name elevitte-ai"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "razorpay": "^2.9.2",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [
+    "AI", "education", "India", "Razorpay", "learning-platform"
+  ],
+  "author": "Elevitte AI",
+  "license": "UNLICENSED"
+}
