@@ -16,5 +16,7 @@ jobs:
 
       - name: Push to Repo 2
         run: |
-          # Use the token to push to the destination repo
           git push --force https://${{ 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 }}@https://github.com/SIBISAM/website.git main
+          # Use the token to push to the destination repo
+          
+          
