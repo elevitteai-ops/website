@@ -1,0 +1,20 @@
+name: Sync to Vercel Repo
+
+on:
+  push:
+    branches:
+      - main  # This triggers when Main is updated from QA
+
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to Repo 2
+        run: |
+          # Use the token to push to the destination repo
+          git push --force https://${{ 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 }}@https://github.com/SIBISAM/website.git main
